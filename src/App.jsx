@@ -1,9 +1,13 @@
-function App() {
+import Sidebar from "./components/Sidebar";
+import Topbar from "./components/Topbar";
+
+export default function App() {
   return (
-    <div>
-      <h1>UniLogs</h1>
+    <div className="layout">
+      <Sidebar />
+      <div className="page">
+        <Topbar />
+      </div>
     </div>
   );
 }
-
-export default App;

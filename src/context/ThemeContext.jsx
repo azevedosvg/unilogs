@@ -9,19 +9,25 @@ const ThemeContext = createContext();
 // Provider:
 export function ThemeProvider({ children }) {
   const [isDark, setIsDark] = useState(false);
+
+  function toggleTheme() {
+    setIsDark((prev) => !prev);
+  }
+
+  const value = {
+    isDark,
+    toggleTheme,
+    theme: isDark ? "dark" : "light",
+  };
+
+  return (
+    <ThemeContext.Provider value={value}>
+      <div className={`app-wrapper ${isDark ? "dark" : "light"}`}>
+        {children}
+      </div>
+    </ThemeContext.Provider>
+  );
 }
-
-const value = {
-  isDark,
-  toggleTheme,
-  theme: isDark ? "dark" : "light",
-};
-
-return (
-  <ThemeContext.Provider value={value}>
-    <div className={`app-wrapper ${isDark ? "dark" : "light"}`}>{children}</div>
-  </ThemeContext.Provider>
-);
 
 // children: tudo que estiver dentro do provider;
 // useState em false: o estado do tema é claro, por padrão;
