@@ -1,3 +1,4 @@
+import "../styles/RecentDeliveries.css";
 import { FaBox } from "react-icons/fa";
 
 const deliveries = [

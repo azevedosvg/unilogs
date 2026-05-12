@@ -1,4 +1,5 @@
 import { useTheme } from "../context/ThemeContext.jsx";
+import "../styles/Sidebar.css";
 import {
   FaTruck,
   FaChartBar,

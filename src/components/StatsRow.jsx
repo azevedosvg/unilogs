@@ -1,4 +1,5 @@
 import { useTheme } from "../context/ThemeContext.jsx";
+import "../styles/StatsRow.css";
 import {
   FaBox,
   FaCheckCircle,

@@ -1,4 +1,5 @@
 import { useTheme } from "../context/ThemeContext.jsx";
+import "../styles/Topbar.css";
 import { FaSearch, FaBell, FaMoon, FaSun } from "react-icons/fa";
 
 export default function Topbar() {

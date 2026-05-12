@@ -1,0 +1,113 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  gap: 1rem;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+}
+
+.topbar-title h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.topbar-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 1px;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 0.75rem;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 0.85rem;
+  outline: none;
+  width: 180px;
+}
+
+.search-box input::placeholder {
+  color: var(--text-muted);
+}
+
+.notif-btn {
+  position: relative;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.42rem 0.65rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.2s;
+}
+
+.notif-btn:hover {
+  background: var(--bg);
+}
+
+.notif-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent-light);
+  color: var(--accent);
+  border: none;
+  border-radius: 8px;
+  padding: 0.42rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  white-space: nowrap;
+  min-width: 100px;
+  justify-content: center;
+}
+
+.theme-btn:hover {
+  filter: brightness(0.95);
+}

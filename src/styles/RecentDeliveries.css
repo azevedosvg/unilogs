@@ -1,0 +1,79 @@
+.deliveries-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+  overflow-x: auto;
+}
+
+.deliveries-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.deliveries-table th {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+}
+
+.deliveries-table td {
+  padding: 0.7rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.deliveries-table tr:last-child td {
+  border-bottom: none;
+}
+
+.deliveries-table tr:hover td {
+  background: var(--bg);
+}
+
+.delivery-id {
+  font-weight: 600;
+  color: var(--accent);
+  font-family: monospace;
+}
+
+.delivery-destination {
+  color: var(--text-muted);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-success {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.status-info {
+  background: var(--info-bg);
+  color: var(--info-text);
+}
+
+.status-warning {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.status-danger {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}

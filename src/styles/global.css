@@ -7,56 +7,56 @@
 }
 
 .app-wrapper.light {
-  --bg: #f0f2f5;
+  --bg: #f5f8fa;
   --bg-card: #ffffff;
-  --bg-sidebar: #1a1200;
-  --text: #1c1208;
-  --text-muted: #7a6a55;
-  --border: #e5e7eb;
-  --accent: #f97316;
-  --accent-light: #fff4ed;
-  --success: #16a34a;
-  --success-bg: #dcfce7;
-  --success-text: #14532d;
-  --info: #2563eb;
-  --info-bg: #dbeafe;
-  --info-text: #1e3a8a;
-  --warning: #d97706;
-  --warning-bg: #fef3c7;
-  --warning-text: #78350f;
-  --danger: #dc2626;
-  --danger-bg: #fee2e2;
-  --danger-text: #7f1d1d;
+  --bg-sidebar: #1c1c1e;
+  --text: #1c1c1e;
+  --text-muted: #6e6e73;
+  --border: #e5e5ea;
+  --accent: #0a84ff;
+  --accent-light: #e8f3ff;
+  --success: #30d158;
+  --success-bg: #e8faee;
+  --success-text: #1a7a35;
+  --info: #0a84ff;
+  --info-bg: #e8f3ff;
+  --info-text: #0a84ff;
+  --warning: #ffd60a;
+  --warning-bg: #fff8e0;
+  --warning-text: #8a6d00;
+  --danger: #ff453a;
+  --danger-bg: #fff0ef;
+  --danger-text: #ff453a;
 }
 
 .app-wrapper.dark {
-  --bg: #0e0a04;
-  --bg-card: #1a1208;
-  --bg-sidebar: #0a0800;
-  --text: #f0e6d6;
-  --text-muted: #7a6a55;
-  --border: #2a1f10;
-  --accent: #fb923c;
-  --accent-light: #1f1008;
-  --success: #4ade80;
-  --success-bg: #052e16;
-  --success-text: #86efac;
-  --info: #60a5fa;
-  --info-bg: #0f1f3d;
-  --info-text: #93c5fd;
-  --warning: #fbbf24;
-  --warning-bg: #2d1a00;
-  --warning-text: #fde68a;
-  --danger: #f87171;
-  --danger-bg: #2d0a0a;
-  --danger-text: #fca5a5;
+  --bg: #1c1c1e;
+  --bg-card: #2c2c2e;
+  --bg-sidebar: #141414;
+  --text: #f2f2f7;
+  --text-muted: #8e8e93;
+  --border: #3a3a3c;
+  --accent: #0a84ff;
+  --accent-light: #1a2a3a;
+  --success: #34c759;
+  --success-bg: #1c2e22;
+  --success-text: #34c759;
+  --info: #0a84ff;
+  --info-bg: #1c2535;
+  --info-text: #0a84ff;
+  --warning: #ffd60a;
+  --warning-bg: #2a2510;
+  --warning-text: #ffd60a;
+  --danger: #ff453a;
+  --danger-bg: #2a1a1a;
+  --danger-text: #ff453a;
 }
 
 .app-wrapper {
   min-height: 100vh;
   background: var(--bg);
   color: var(--text);
-  font-family: "Segoe UI", system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 14px;
   transition:
     background 0.3s,
