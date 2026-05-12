@@ -12,19 +12,19 @@ Projeto acadêmico desenvolvido em React utilizando Context API para gerenciamen
 
 O UniLogs é um dashboard fictício de logística inteligente. A interface simula a tela de controle que uma empresa de entregas utilizaria para monitorar suas operações em tempo real — visualizando métricas do dia, status de entregas, motoristas em rota e eventos operacionais.
 
-O objetivo acadêmico do projeto é demonstrar na prática o uso da **Context API nativa do React** para gerenciamento global de estados, sem o uso de bibliotecas externas.
+O objetivo acadêmico do projeto é demonstrar na prática o uso da **Context API nativa do React** para gerenciamento global de estados, sem o uso de bibliotecas externas como Redux ou Zustand.
 
 ---
 
 ## Funcionalidades
 
-- Alternância global entre tema claro e escuro via Context API;
-- Cards de métricas com indicadores de variação;
-- Tabela de entregas recentes com badges de status;
-- Feed de atividade operacional em tempo real;
-- Sidebar de navegação com perfil do usuário;
-- Data e hora atualizadas em tempo real na barra superior;
-- Layout responsivo;
+- Alternância global entre tema claro e escuro via Context API
+- Cards de métricas com indicadores de variação
+- Tabela de entregas recentes com badges de status
+- Feed de atividade operacional em tempo real
+- Sidebar de navegação com perfil do usuário
+- Data e hora atualizadas em tempo real na barra superior
+- Layout responsivo
 
 ---
 
@@ -66,11 +66,12 @@ export function useTheme() {
 
 **Componentes que consomem o contexto**
 
-| Componente | O que consome |
-| `Topbar.jsx` | `isDark`, `toggleTheme` |
-| `Sidebar.jsx` | `isDark` |
-| `StatsRow.jsx` | `isDark` |
-| `ActivityFeed.jsx` | `isDark` |
+| Componente         | O que consome           |
+| ------------------ | ----------------------- |
+| `Topbar.jsx`       | `isDark`, `toggleTheme` |
+| `Sidebar.jsx`      | `isDark`                |
+| `StatsRow.jsx`     | `isDark`                |
+| `ActivityFeed.jsx` | `isDark`                |
 
 ---
 
@@ -108,7 +109,7 @@ A transição suave entre os temas é feita via CSS:
 
 ```
 unilogs/
-    public/
+├── public/
 │   └── index.html
 ├── src/
 │   ├── context/
@@ -136,13 +137,15 @@ unilogs/
 
 ---
 
-## Tecnologias utilizadas
+## Tecnologias
 
-| React 18: Biblioteca principal de interface;
-| Vite: Servidor de desenvolvimento;
-| React Icons: Biblioteca de ícones;
-| Google Fonts (Inter): Fonte principal;
-| CSS Variables: Sistema de temas claro/escuro;
+| Tecnologia           | Uso                                   |
+| -------------------- | ------------------------------------- |
+| React 18             | Biblioteca principal de interface     |
+| Vite 5               | Bundler e servidor de desenvolvimento |
+| React Icons          | Biblioteca de ícones                  |
+| Google Fonts (Inter) | Tipografia                            |
+| CSS Variables        | Sistema de temas claro/escuro         |
 
 ---
 
@@ -164,14 +167,20 @@ npm install
 npm run dev
 ```
 
+Acesse `http://localhost:5173` no navegador.
+
+```bash
+# Build para produção
+npm run build
+```
+
 ---
 
 ## Autores
 
 Gabriel de Azevedo Silva e Paulo Victor Rodrigues Moraes
 
-## Disciplina e Professor
+## Professor e disciplina
 
+Christien Lana Rachid
 Desenvolvimento Web Front End — UniAcademia 2026
-
-Professor: Christien Lana Rachid
