@@ -182,5 +182,4 @@ Gabriel de Azevedo Silva e Paulo Victor Rodrigues Moraes
 
 ## Professor e disciplina
 
-Christien Lana Rachid
-Desenvolvimento Web Front End — UniAcademia 2026
+Christien Lana Rachid — Desenvolvimento Web Front End — UniAcademia 2026
