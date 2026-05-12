@@ -3,6 +3,7 @@ import Topbar from "./components/Topbar";
 import StatsRow from "./components/StatsRow";
 import RecentDeliveries from "./components/RecentDeliveries";
 import ActivityFeed from "./components/ActivityFeed";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
             <ActivityFeed />
           </div>
         </main>
+        <Footer />
       </div>
     </div>
   );

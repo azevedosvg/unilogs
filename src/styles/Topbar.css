@@ -24,6 +24,13 @@
   margin-top: 1px;
 }
 
+.topbar-authors {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 1px;
+}
+
 .topbar-actions {
   display: flex;
   align-items: center;

@@ -1,21 +1,51 @@
 import { useTheme } from "../context/ThemeContext.jsx";
-import "../styles/Topbar.css";
 import { FaSearch, FaBell, FaMoon, FaSun } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import "../styles/Topbar.css";
+
+function useDateTime() {
+  const [dateTime, setDateTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDateTime(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const formatted = dateTime.toLocaleDateString("pt-BR", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+  const time = dateTime.toLocaleTimeString("pt-BR", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  return `${formatted} · ${time}`;
+}
 
 export default function Topbar() {
   const { isDark, toggleTheme } = useTheme();
+  const dateTime = useDateTime();
 
   return (
     <header className="topbar">
       <div className="topbar-title">
         <h1>Painel de Controle</h1>
-        <span className="topbar-subtitle">Bem-vindo de volta, Gabriel!</span>
+        <span className="topbar-subtitle">{dateTime}</span>
+        <span className="topbar-authors">
+          Gabriel de Azevedo Silva e Paulo Victor Rodrigues Moraes
+        </span>
       </div>
 
       <div className="topbar-actions">
         <div className="search-box">
           <FaSearch size={14} />
-          <input type="text" placeholder="Buscar por entregas, rotas..." />
+          <input type="text" placeholder="Buscar entregas, rotas..." />
         </div>
 
         <button className="notif-btn" aria-label="Notificações">

@@ -41,14 +41,16 @@ export default function StatsRow() {
         const Icon = stat.icon;
         return (
           <div className="stat-card" key={stat.label}>
-            <div className="stat-header">
-              <Icon size={20} />
+            <div className="stat-top">
+              <Icon size={16} />
+              <span className="stat-label">{stat.label}</span>
+            </div>
+            <div className="stat-bottom">
+              <p className="stat-value">{stat.value}</p>
               <span className={`stat-change ${stat.up ? "up" : "down"}`}>
                 {stat.change}
               </span>
             </div>
-            <p className="stat-value">{stat.value}</p>
-            <p className="stat-label">{stat.label}</p>
           </div>
         );
       })}
