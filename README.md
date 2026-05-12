@@ -164,8 +164,6 @@ npm install
 npm run dev
 ```
 
-Acesse no navegador.
-
 ---
 
 ## Autores
